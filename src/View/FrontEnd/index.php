@@ -17,7 +17,6 @@
 
     <!-- End Page Container -->
 </div>
-<br>
 
 <script>
     // Accordion

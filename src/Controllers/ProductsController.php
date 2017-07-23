@@ -17,13 +17,12 @@ class ProductsController extends AppController
     public function addProduct($name,$price){
         $addProduct = new Product();
         $data = $addProduct->addProduct($name,$price);
-        $query = new AppController();
-        $query->execute($data);
+        $this->execute($data);
 
-        if($query->execute($data)) {
-            $query->redirect("/PNVsocial_network/src/view/product.html");
+        if($this->execute($data)) {
+            return $this->successMessage("The product has been save");
         }else {
-            echo "Failed";
+            return $this->failedMessage("The product can be save");
         }
     }
 }

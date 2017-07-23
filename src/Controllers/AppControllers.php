@@ -22,5 +22,25 @@ Class AppController extends DB {
     public function redirect($location) {
      header("location: $location");
     }
+
+    // Set successfully message
+    public function successMessage($message) {
+        $this->success = $message;
+    }
+
+    //Set failed message
+    public function failedMessage($message) {
+         $this->failed = $message;
+    }
+
+    //Display successfully message
+    public function returnSuccessMessage() {
+        return $this->success;
+    }
+
+    // Display falied message
+    public function returnFailedMessage() {
+        return $this->failed;
+    }
 }
 ?>

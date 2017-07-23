@@ -1,3 +1,4 @@
 RewriteEngine On
 RewriteRule "add.htm" "src/View/product.html"
+RewriteRule "dashboard" "src/View/BackEnd/index.php"
 
