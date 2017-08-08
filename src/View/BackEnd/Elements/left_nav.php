@@ -1,10 +1,4 @@
-<body class="no-skin">
 <!-- Left navigation -->
-<div class="main-container ace-save-state" id="main-container">
-    <script type="text/javascript">
-        try{ace.settings.loadState('main-container')}catch(e){}
-    </script>
-
     <div id="sidebar" class="sidebar                  responsive                    ace-save-state">
         <script type="text/javascript">
             try{ace.settings.loadState('sidebar')}catch(e){}
@@ -75,7 +69,7 @@
 
                         <ul class="submenu">
                             <li class="">
-                                <a href="top-menu.html">
+                                <a href="?pages=edit">
                                     <i class="menu-icon fa fa-caret-right"></i>
                                     Top Menu
                                 </a>
@@ -524,4 +518,3 @@
             <i id="sidebar-toggle-icon" class="ace-icon fa fa-angle-double-left ace-save-state" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
         </div>
     </div>
-</div>

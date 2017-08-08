@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html>
 <title>Home</title>
-<?php include ("Elements/static_header.php");?>
+<?php include ("../Elements/static_header.php");?>
 <body class="w3-theme-l5">
 
-<?php include ("Elements/header.php"); ?>
+<!-- Inherit from index -->
+<?php include ("../Elements/header.php"); ?>
 
 <!-- Page Container -->
-<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
+<?php include ("Elements/user_header.php"); ?>
+
+<div class="w3-container w3-content" style="max-width:1400px;margin-top:5px">
     <!-- The Grid -->
     <div class="w3-row">
         <?php include ("Elements/left_nav.php"); ?>
-        <!-- Using get pages here -->
-
         <?php include ("Elements/content.php");?>
-
-
-        <!-- End of get pages -->
         <?php include ("Elements/right_nav.php");?>
         <!-- End Grid -->
     </div>
